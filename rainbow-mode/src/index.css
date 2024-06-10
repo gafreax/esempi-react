@@ -1,0 +1,39 @@
+body {
+  font-family: 'Calibri', 'sans-serif'
+}
+
+button {
+  padding: 8px; 
+  border-radius: 12px;
+  background-color: lightgray;
+  border-width: 0.5px;
+  margin: 8px;
+}
+
+button:hover {
+  cursor: pointer
+}
+
+body { margin: 0; padding: 0 }
+
+.rainbow-mode {
+  background-image: linear-gradient(135deg, green, blue, indigo, violet);
+  color: purple;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.page {
+  position:absolute;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+}
