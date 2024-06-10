@@ -21,6 +21,9 @@ function Product() {
         fetchProduct()
     }, [productId])
 
+    const prevPage = productId > 1 ? parseInt(productId) - 1 : 100
+    const nextPage = productId < 100 ? parseInt(productId) + 1 : 1
+
     return <Stack spacing={3}>
         <Box>
             <Link to="/">
@@ -35,12 +38,12 @@ function Product() {
             </Typography>
         </Box>
         <Stack direction="row" spacing={3}>
-            <Link to={`/product/${productId ? parseInt(productId) - 1 : 0}`}>
+            <Link to={`/product/${prevPage}`}>
                 <Button variant="contained">
                     <ArrowLeft /> Precedente
                 </Button>
             </Link>
-            <Link to={`/product/${productId < 100 ? parseInt(productId) + 1 : 1}`}>
+            <Link to={`/product/${nextPage}`}>
                 <Button variant="contained">
                     Successivo <ArrowRight />
                 </Button>

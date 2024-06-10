@@ -11,21 +11,21 @@ function Home({ setLoggedIn }) {
     }
 
     return <Grid container sx={{ width: '100%', background: "lightcyan" }}>
-        <Grid item xs={12} md={2} style={{background: "lightblue"}}>
-        <Box>
+        <Grid item xs={12} md={2} style={{ background: "lightblue" }}>
+            <Box>
                 <Button onClick={() => setMenuOpen(true)} >Mostra menu</Button>
                 <Menu id="basic-menu" open={menuOpen}>
                     <MenuItem>
-                      <Link to="/product/1">Prodotto 1</Link>
+                        <Link to="/product/1">Prodotto 1</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/product/2">Prodotto 2</Link>
+                        <Link to="/product/2">Prodotto 2</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/product/3">Prodotto 3</Link>
+                        <Link to="/product/3">Prodotto 3</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/product/4">Prodotto 4</Link>
+                        <Link to="/product/4">Prodotto 4</Link>
                     </MenuItem>
 
                     <MenuItem onClick={() => setMenuOpen(false)}>Chiudi</MenuItem>
